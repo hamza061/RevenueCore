@@ -1,6 +1,8 @@
-import Testing
+import XCTest
 @testable import RevenueCore
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class RevenueCoreTests: XCTestCase {
+    func testVersionString() {
+        XCTAssertEqual(RevenueCore.version, "0.1.0")
+    }
 }
